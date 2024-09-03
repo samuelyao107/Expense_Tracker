@@ -1,0 +1,51 @@
+<div class="header">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><fa-icon [icon]="faDollar"></fa-icon> Total Income</h5>
+          <p class="card-text"><fa-icon [icon]="faDollar"></fa-icon> 20000</p>
+        </div>
+      </div>
+      <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"> <fa-icon [icon]="faDollar"></fa-icon> Total Expenses</h5>
+          <p class="card-text"><fa-icon [icon]="faDollar"></fa-icon> 20000</p>
+        </div>
+      </div>
+      <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><fa-icon [icon]="faDollar"></fa-icon> Balance</h5>
+          <p class="card-text"><fa-icon [icon]="faDollar"></fa-icon> 20000</p>
+        </div>
+      </div>
+</div>
+<div class="charts">
+    <div class="chart-container" [chart]="chart"></div>
+    <div class="chart-container1" [chart]="chart1"></div>
+</div>
+<div class="transactions">
+  <div class="title">Recent transactions</div>
+  <div class="transaction-wrapper">
+    <div class="transaction" *ngFor="let transaction of transactions">
+      <div class="image">
+        <img [src]="transaction.imgSrc" alt="" />
+      </div>
+      <div class="title">{{ transaction.title }}</div>
+      <div class="price">{{ transaction.price }}</div>
+      <div class="shop-location">
+        <div class="shop">{{ transaction.shop }}</div>
+        <div class="location">{{ transaction.location }}</div>
+      </div>
+      <div
+        class="status"
+        [ngClass]="{
+          confirmed: transaction.status === 'confirmed',
+          pending: transaction.status === 'pending',
+          shipped: transaction.status === 'shipped'
+        }"
+      >
+        {{ transaction.status }}
+      </div>
+    </div>
+  </div>
+</div>
+  

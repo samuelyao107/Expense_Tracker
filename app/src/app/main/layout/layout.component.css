@@ -1,0 +1,13 @@
+.space{
+    width: 1000px;
+}
+.space1{
+    width: 100px;
+}
+.space3{
+    width: 20px;
+}
+form{
+    display: flex;
+    gap:5px;
+}

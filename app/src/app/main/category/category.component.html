@@ -1,0 +1,44 @@
+<div class="header">
+    <p>Category</p>
+    <button type="button" class="btn btn-primary" (click)="openDialog()"><fa-icon [icon]="faPlus"></fa-icon>  New Category</button>
+</div>
+<div class="content">
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Type</th>
+                <th scope="col">Actions</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Food</td>
+                <td>Expense</td>
+                <td class="action"> 
+                  <button type="button" class="btn btn-primary"><fa-icon [icon]="faEdit"></fa-icon>  </button>
+                  <button type="button" class="btn btn-danger"><fa-icon [icon]="faDeleteLeft"></fa-icon>  </button>
+              
+              </td>
+              </tr>
+              <tr>
+                <td>Salary</td>
+                <td>Income</td>
+                <td class="action"> 
+                    <button type="button" class="btn btn-primary"><fa-icon [icon]="faEdit"></fa-icon>  </button>
+                    <button type="button" class="btn btn-danger"><fa-icon [icon]="faDeleteLeft"></fa-icon>  </button>
+                
+                </td>
+              </tr>
+              <tr>
+                <td>Transport</td>
+                <td>Expense</td>
+                <td class="action"> 
+                    <button type="button" class="btn btn-primary"><fa-icon [icon]="faEdit"></fa-icon>  </button>
+                    <button type="button" class="btn btn-danger"><fa-icon [icon]="faDeleteLeft"></fa-icon>  </button>
+                
+                </td>
+              </tr>
+        </tbody>
+      </table>
+</div>

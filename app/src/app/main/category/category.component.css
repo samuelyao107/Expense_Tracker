@@ -1,0 +1,23 @@
+.header{
+    margin-top: 100px;
+    margin-left: 30%;
+    display: flex;
+    gap: 500px;
+}
+
+.header p{
+    font-size: 20px;
+    font-weight: 50px;
+}
+
+.action{
+    display: flex;
+    gap: 10px;
+}
+
+.content{
+   width: 720px;
+   margin-top: 20px;
+   margin-left: 30%;
+
+}
